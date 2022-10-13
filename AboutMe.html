@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&family=Ovo&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+    <style>
+        h5 {
+            font-size: medium;
+        }
+    </style>
+</head>
+
+
+
+
+
+
+
+<body class="coreStyle">
+
+    <div class="hero" >
+        
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Tim's Portfolio</a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                  <li ><a href="Home.html">Home</a></li>
+                  <li class="active"><a href="AboutMe.html">AboutMe</a></li>
+                  <li><a href="3DModels.html">3DModels/Lighing</a></li>
+                  
+                  <li><a href="Projects.html">Projects</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <div class="hero-bg">
+            <h1>Tim's Profile</h1>
+            <h4>secondary artist</h4>
+
+        </div>
+    </div>
+
+    <div class="page">
+
+        <div class="sidebar">
+
+                <img src="images/panda.jpeg" class="timage">
+
+            <hr/>
+            <h2>Timothy Cammack</h2>
+            <ul id="blue-list">
+                <h4 class="timh4">Hobbies & Interests</h4>
+                <hr>
+              <li style="font-weight:bold;">Animation</li>
+              <li>World Design</li>
+              <li>Virtual Reality Development</li>
+              <li>Video Games</li>
+            </ul>
+
+
+          </div>
+
+
+        <div class="content">
+            <h3>About Me</h3>
+
+            <h5 class="timh5">
+                I grew up in southern California and moved to Idaho when I graduated from high school.
+                A year after moving I heard of an increadibly interesting degree called GIMM.
+                After startingting the program I developed an great love for video game design and the puzzle solving of
+                coding.
+                I am currently developing my own VR game and exploring the multitude of possibilities the VR open up.
+            </h5>
+
+
+
+            <ul>
+
+            </ul>
+
+            <button class="tiModalBtn" data-toggle="modal" data-target="#gameModal">
+                <p>
+                    Check out this game!
+                </p>
+            </button>
+
+            <button class="tiModalBtn" data-toggle="modal" data-target="#artModal">
+                <p>
+                    Check out this art!
+                </p>
+            </button>
+
+
+
+          </div>
+
+
+
+        <div class="modal fade" id="gameModal" role="dialog">
+            <div class="modal-dialog modal-lg" style="width: 1600px;">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">SpaceShooters!</h4>
+                        <h5>Made in Gamemaker</h5>
+                    </div>
+                    <div class="modal-body">
+
+
+                        <iframe src="space.html" name="iframe_a" height="800px" width="1050px"
+                            title="Iframe Example"></iframe>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="modal fade" id="artModal" role="dialog">
+            <div class="modal-dialog" style="width: 1000px;">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">VR game concept art</h4>
+                        <h5></h5>
+                    </div>
+                    <div class="modal-body">
+                        <div>
+
+                            <img src="images/House2.gif" class="modal-Art" style="width: 100%; height: 100%;">
+                        </div>
+                        <div>
+
+                            <img src="images/troll2.jpg" style="width: 100%; height: 100%;" class="modal-Art">
+                        </div>
+                        <div>
+
+                            <img src="images/toonCharacter.png" style="width: 100%; height: 100%;" class="modal-Art">
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+</body>
+
+
+<footer>
+    <p>Copyright Washed Ashore Trolls</p>
+    </footer>
+
+
+
+
+
+
+</html>
