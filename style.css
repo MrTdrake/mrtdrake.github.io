@@ -17,26 +17,30 @@ h2 {
   color: #1e4277;
 }
 h3 {
+  align-self: auto;
   font-family:  'Lato', sans-serif;
-  font-size: 36px;
-  line-height: 48px;
+  font-size: 200%;
+  line-height: 100%;
   margin:0;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight:800;
   text-transform: uppercase;
   color:#1A6FA8;
 }
 .names {
-  text-align:center;
   padding-top:1rem;
+  font-size: 150%; 
+  font-size-adjust:unset;
+  text-align: center;
 }
 h4 {
   font-family:  'Lato', sans-serif;
   font-size: 24px;
   line-height: 36px;
   margin:0;
-  margin-top: 30px;
+  margin-top: 5%;
+  margin-bottom: 5%;
   color: #1e4277;
 }
 h5 {
@@ -132,7 +136,8 @@ body {
   border-radius: 10px;
 }
 .row .box .content {
-  padding: 25px;
+  padding: .3rem;
+  font-size: 2vw;
 }
 .row1 .box {
   width:33.333%;
@@ -264,13 +269,17 @@ body.coreStyle {
 .page .sidebar {
   background-color:#cccccc;
   width:30%;
-  padding: 80px 30px 80px 80px;
+  padding: 10% 30% 20% 5%;
 }
-.page .sidebar .image {
-  margin:0 auto;
-  text-align: center;
-  margin: 20px 0;
+.page .sidebar h2 {
+  font-family:  'Lato', sans-serif;
+  font-size: 6.5vw;
+  font-weight: 800vw;
+  line-height: 100%;
+  margin:0;
+  color: #1e4277;
 }
+
 .coreStyle hr {
   border-bottom: 6px dashed #bababa;
 }
@@ -281,7 +290,7 @@ body.coreStyle {
 }
 .page .content {
   width:70%;
-  padding: 80px 60px 60px 180px;
+  padding: 10% 10% 10% 5%;
 }
 .coreStyle footer {
   padding: 60px;
@@ -600,26 +609,29 @@ a.btn-gold:hover, a.btn-gold:active {
 
 .timh5{
   color: #555;
-  font-weight: 100;
+  font-weight: 600;
   font-kerning: auto;
 }
 
 .timh4{
 color:rgb(92, 92, 92);
-font-weight: 50;
+font-weight: 800;
 font-kerning: normal;
 
 }
 
 .tiModalBtn{
-  background:coral;
+  background:linear-gradient(75deg, #AA590F, #E89B00);;
   padding:1em 2em;
   border-radius:  15px;
   color:#fff;
   border:0;
+  margin: .5em;
+/*
   animation-name: example;
   animation-duration: 4s;
   animation-iteration-count: infinite;
+  */
 }
 
 @keyframes example {
@@ -634,17 +646,24 @@ font-kerning: normal;
   background: #353535;
 }
 
+.modal-dialog{
+  
+  margin: 0,0,0,0;
+}
+
 .simpleModal{
   display:none;
   position:fixed;
   z-index:1;
-  left:0;
+  left: 0;
   top:0;
   height: 100%;
   width: 100%;
   overflow: auto;
   background-color:rgba(0, 0, 0, 0.5);
 }
+
+
 
 .modal-content{
   background-color: #f4f4f4;
@@ -718,11 +737,12 @@ font-kerning: normal;
 
 .timage{
   border:5px solid #353535;
-  height: 200px;
-  width: 200px;
+
   border-radius: 50%;
   opacity: 1;
-
+  width: 25vw; 
+  height: 25vw;
+  padding:100%;
 }
 
 .modal-Art{
