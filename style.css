@@ -79,7 +79,7 @@ body {
 /*------------------------------------------- INDEX -------------------------------------------*/
 .row {
   display: flex;
-  padding: 80px;
+  padding: 2vw;
   flex-wrap: wrap;
   background-image: linear-gradient(0deg,#174563, #1A6FA8) ;
   margin: 0;
@@ -88,7 +88,7 @@ body {
 
 .row1 {
   display: flex;
-  padding: 80px;
+  padding: 2vw;
   flex-wrap: wrap;
   background-image: linear-gradient(0deg, #1A6FA8, #174563) ;
   margin: 0;
@@ -148,7 +148,17 @@ body {
   border-radius: 10px;
 }
 .row1 .box .content {
-  padding: 25px;
+  padding: .3rem;
+  font-size: 2vw;
+}
+
+.row .content h4{
+  padding: .1rem;
+  font-size: 3vw;
+}
+.row1 .content h4{
+  padding: .1rem;
+  font-size: 3vw;
 }
 #banner {
     text-align:center;
