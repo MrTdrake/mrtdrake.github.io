@@ -309,67 +309,76 @@ body.coreStyle {
   width: 100%;
   display: flex;
 }
+.sidebar img{
+  margin: auto;
+  border:5px solid #353535;
+  aspect-ratio: 1/1;
+  width:70%;
+  height:auto;
+  border-radius: 50%;
+}
 
 @media screen and (min-width: 1024px){
   .page .sidebar {
+    display:flex;
+    flex-direction: column;
     background-color:#cccccc;
     width:30%;
-    padding: 10% 30% 20% 5%;
+    padding: 2%;
   }
   .page .sidebar h2 {
     font-family:  'Lato', sans-serif;
-    font-size: 6.5vw;
+    font-size: 6rem;
     font-weight: 800vw;
     line-height: 100%;
     margin:0;
     color: #1e4277;
   }
-  .page .sidebar .image img {
+  /* .page .sidebar .image img {
     border-radius: 50%;
     width:50%;
     box-shadow: 0 3px 35px rgba(0,0,0,0.15);
-  }
+  } */
+
+  
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px){
   .page .sidebar {
+    display:flex;
+    flex-direction: column;
     background-color:#cccccc;
     width:30%;
-    padding: 10% 30% 20% 5%;
+    padding: 2%;
   }
   .page .sidebar h2 {
     font-family:  'Lato', sans-serif;
-    font-size: 6.5vw;
+    font-size: 5rem;
     font-weight: 800vw;
     line-height: 100%;
     margin:0;
     color: #1e4277;
-  }
-  .page .sidebar .image img {
-    border-radius: 50%;
-    width:50%;
-    box-shadow: 0 3px 35px rgba(0,0,0,0.15);
   }
 }
 
-@media screen and(max-width: 767px){
+@media screen and (max-width: 767px){
+  .page{
+    flex-direction: column;
+  }
   .page .sidebar {
+    display:flex;
+    flex-direction: column;
     background-color:#cccccc;
-    width:30%;
-    padding: 10% 30% 20% 5%;
+    width:100%;
+    padding: 2%;
   }
   .page .sidebar h2 {
     font-family:  'Lato', sans-serif;
-    font-size: 6.5vw;
+    font-size: 6rem;
     font-weight: 800vw;
     line-height: 100%;
     margin:0;
     color: #1e4277;
-  }
-  .page .sidebar .image img {
-    border-radius: 50%;
-    width:50%;
-    box-shadow: 0 3px 35px rgba(0,0,0,0.15);
   }
 }
 
@@ -829,16 +838,6 @@ font-kerning: normal;
 .modal-Image:hover{
   border:10px solid #181818;
 
-}
-
-.timage{
-  border:5px solid #353535;
-
-  border-radius: 50%;
-  opacity: 1;
-  width: 80% !important; 
-  height: auto;
-  padding:10%;
 }
 
 .modal-Art{
