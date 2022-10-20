@@ -83,7 +83,7 @@ body {
 
 
 .names {
-  font-size: 36px; 
+  font-size: 3rem; 
   font-size-adjust:unset;
   text-align: center;
   line-height: 1.2;
@@ -257,9 +257,8 @@ body {
   }
   .row .box {
     transition: 0.3s;
-    height: 80%;
-    align-items: stretch;
-    margin:5px;
+    width:30vw;
+    margin:10px;
     
     border-radius: 10px;
   }
@@ -322,8 +321,9 @@ body {
   }
   .row .box .content {
     padding: .1vw;
-    height: 16vw;
+    height: 25vw;
     font-size: 2vw;
+
   }
   .row .content h4{
     margin: auto;
