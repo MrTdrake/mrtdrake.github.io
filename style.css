@@ -97,9 +97,10 @@ body {
 }
 .row{
   justify-content: center;
+  pointer-events: none;
 }
 .row .box{
-  
+  pointer-events: all;
   padding: 3px;
   margin: border; /* !importanté */
   background: linear-gradient(320deg, #07522a00 10%, #00db63 50%);
@@ -126,6 +127,7 @@ body {
 
   box-shadow: 0 3px 20px rgb(0, 0, 0);
   background: linear-gradient(0deg, #07522a 40%, #00db63 50%);
+  cursor: pointer;
 }
 
 .row .box .content {
@@ -172,7 +174,7 @@ body {
     padding: 1.5vw;
     flex-wrap:wrap;
     background-image: linear-gradient(0deg,#226368, #1aa8a3) ;
-    
+    pointer-events: none;
   }
   .row .box {
     transition: 0.3s;
@@ -180,17 +182,18 @@ body {
     margin:10px;
     
     border-radius: 10px;
+    pointer-events: all;
   }
   .row .box:hover{
     z-index:1;
-    opacity: 1;
+    
     transition: 0.3s;
 
     scale: 1.1;
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.467);
     border-radius: 10px;
   }
-  .row:hover .box:not(:hover){
+  .row:hover >  .box:not(:hover){
     opacity: .5;
   }
   .row .content h4{
@@ -494,7 +497,10 @@ body.coreStyle {
   display: inline-block;
   justify-content: left;
   border-bottom: 10px solid #353535;
-  background-image: linear-gradient(350deg, #073f21, #00db63);
+  background-image: linear-gradient(290deg, #073f2100 0%,#073f21 60%, #00db63 100%), url(images/WebsiteHeroImage.png);
+  background-repeat:no-repeat;
+  background-position:inherit;
+  background-position-x: right;
   
 }
 
@@ -518,12 +524,13 @@ body.coreStyle {
     text-transform: uppercase;
     position: relative;
     z-index: 2;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     margin-left: 5%;
     margin-right: 5%;
     font-size: 15rem;
   }
+
 }
 @media screen and (min-width: 767px) and (max-width: 1023px){
   .coreStyle .hero h1 {
@@ -753,10 +760,20 @@ font-kerning: normal;
 .timbutton:hover{
   background: #353535;
 }
+.modal{
+  padding: 0 !important;
+  margin:auto;
+  
+}
 
+.modal-dialog{
+  width: 90%;
+  padding: auto;
+}
 
 .Timodal-dialog{
-  margin: 0vw,0vw,0vw,0vw;
+  margin: 0;
+  padding: 0;
 }
 @media screen and (max-width: 767px){
   .modal-header{
@@ -789,9 +806,9 @@ font-kerning: normal;
 
 .modal-content{
   background-color: #f4f4f4;
-  margin:  3vw;
-  padding:5px;
-  width:93vw;
+  margin:  0;
+  padding:0;
+  width:100%;
   box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
   animation-name:modalopen;
   animation-duration:1s;
