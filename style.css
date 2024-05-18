@@ -93,11 +93,14 @@ body {
   flex-wrap: wrap;
   background-image: linear-gradient(0deg, #1A6FA8, #174563) ;
   margin: 0;
+  
 
 }
 .row{
   justify-content: center;
   pointer-events: none;
+  border-top: 10px solid #353535;
+  border-bottom: 10px solid #353535;
 }
 .row .box{
   pointer-events: all;
@@ -496,7 +499,6 @@ body.coreStyle {
   position: relative;
   display: inline-block;
   justify-content: left;
-  border-bottom: 10px solid #353535;
   background-image: linear-gradient(290deg, #073f2100 0%,#073f21 60%, #00db63 100%), url(images/WebsiteHeroImage.png);
   background-repeat:no-repeat;
   background-position:inherit;
