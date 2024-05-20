@@ -39,10 +39,10 @@ h4 {
   font-family:  'Lato', sans-serif;
   line-height: 100%;
   margin:0;
-  margin-top: .1vw;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   color: #1e4277;
+  font-size: 3rem;
 }
 h5 {
   font-family:  'Lato', sans-serif;
@@ -770,9 +770,13 @@ font-kerning: normal;
 
 .modal-dialog{
   width: 90%;
+  margin: 3% auto;
   padding: auto;
 }
 
+.centered{
+  text-align: center;
+}
 .Timodal-dialog{
   margin: 0;
   padding: 0;
@@ -889,7 +893,7 @@ font-kerning: normal;
 
 
 .modal-content{
-  background-image: linear-gradient(75deg, #AA590F, #E89B00);
+  background-image: linear-gradient(324deg, #16486a, #00db63);
   border-radius: 2vw;
 }
 
