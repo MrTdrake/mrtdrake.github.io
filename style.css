@@ -102,6 +102,11 @@ body {
   border-top: 10px solid #353535;
   border-bottom: 10px solid #353535;
 }
+
+.layer1, .layer2{
+  grid-column: 1;
+  grid-row: 1;
+}
 .row .box{
   pointer-events: all;
   padding: 3px;
